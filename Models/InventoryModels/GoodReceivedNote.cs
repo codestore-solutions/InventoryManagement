@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace Core.InventoryModels
 {
-    public class GoodReceivedNote
+    public class GoodReceivedNote : BaseEntity
     {
         public int GoodsReceivedNoteId { get; set; }
         [Display(Name = "GRN Number")]
