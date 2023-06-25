@@ -1,4 +1,5 @@
-﻿using DataAccess.Data;
+﻿using Core.InventoryModels;
+using DataAccess.Data;
 using DataAccess.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repository
 {
-    public class WarehouseRepository : GenericRepository<WarehouseRepository>, IWarehouseRepository
+    public class WarehouseRepository : GenericRepository<Warehouse>, IWarehouseRepository
     {
         private readonly AppDbContext _appDbContext;
         public WarehouseRepository(AppDbContext appDbContext) : base(appDbContext)
