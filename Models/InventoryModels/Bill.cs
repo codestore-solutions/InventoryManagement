@@ -8,10 +8,8 @@ using System.Xml.Linq;
 
 namespace Core.InventoryModels
 {
-    public class Bill
+    public class Bill : BaseEntity
     {
-        public long BillId { get; set; }
-        [Display(Name = "Bill / Invoice Number")]
         public string BillName { get; set; }
         [Display(Name = "GRN")]
         public int GoodsReceivedNoteId { get; set; }

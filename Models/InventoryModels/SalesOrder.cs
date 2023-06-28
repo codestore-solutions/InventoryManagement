@@ -8,9 +8,8 @@ using System.Xml.Linq;
 
 namespace Core.InventoryModels
 {
-    public class SalesOrder
+    public class SalesOrder :  BaseEntity
     {
-        public long SalesOrderId { get; set; }
         [Display(Name = "Order Number")]
         public string SalesOrderName { get; set; }
         [Display(Name = "Branch")]

@@ -8,9 +8,8 @@ using System.Xml.Linq;
 
 namespace Core.InventoryModels
 {
-    public class Branch
+    public class Branch : BaseEntity
     {
-        public long BranchId { get; set; }
         [Required]
         public string BranchName { get; set; }
         public string Description { get; set; }

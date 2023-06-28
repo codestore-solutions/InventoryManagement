@@ -10,7 +10,6 @@ namespace Core.InventoryModels
 {
     public class GoodReceivedNote : BaseEntity
     {
-        public int GoodsReceivedNoteId { get; set; }
         [Display(Name = "GRN Number")]
         public string GoodsReceivedNoteName { get; set; }
         [Display(Name = "Purchase Order")]

@@ -24,7 +24,6 @@ namespace DataAccess.Repository
         public EntityEntry<T> Add(T entity)
         {
             return _dbSet.Add(entity);
-            
         }
 
         public EntityEntry<T> Delete(T entity)

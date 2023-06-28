@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace Core.InventoryModels
 {
-    public class Warehouse
+    public class Warehouse : BaseEntity
     {
-        public long WarehouseId { get; set; }
         [Required]
         public string WarehouseName { get; set; }
         public string Description { get; set; }

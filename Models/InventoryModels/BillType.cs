@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace Core.InventoryModels
 {
-    public class BillType
+    public class BillType : BaseEntity
     {
-        public long BillTypeId { get; set; }
         [Required]
         public string BillTypeName { get; set; }
         public string Description { get; set; }
