@@ -23,6 +23,7 @@ namespace DataAccess.Repository
         private IPurchaseRepository? _purchaseRepository;
         private ISalesOrderLineRepository? _salesOrderLineRepository;
         private ISalesOrderRepository? _salesOrderRepository;
+        private IShipperRepository? _shipperRepository;
         private ISupplierRepository? _supplierRepository;
         private IWarehouseRepository? _warehouseRepository;
 
@@ -41,6 +42,7 @@ namespace DataAccess.Repository
         public IPurchaseRepository PurchaseRepository => _purchaseRepository ??= new PurchaseRepository(_appDbContext);
         public ISalesOrderLineRepository SalesOrderLineRepository => _salesOrderLineRepository ??= new SalesOrderLineRepository(_appDbContext);
         public ISalesOrderRepository SalesOrderRepository => _salesOrderRepository ??= new SalesOrderRepository(_appDbContext);
+        public IShipperRepository ShipperRepository => _shipperRepository ??= new ShipperRepository(_appDbContext);
         public ISupplierRepository SupplierRepository => _supplierRepository ??= new SupplierRepository(_appDbContext);
         public IWarehouseRepository WarehouseRepository => _warehouseRepository ??= new WarehouseRepository(_appDbContext);
 
@@ -55,7 +57,7 @@ namespace DataAccess.Repository
             _appDbContext.SaveChanges();
         }
 
-        public async void SaveAsync()
+        public async Task SaveAsync()
         {
             await _appDbContext.SaveChangesAsync();
         }

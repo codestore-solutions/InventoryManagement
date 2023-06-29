@@ -29,6 +29,7 @@ namespace DataAccess.Data
         public DbSet<SalesOrder> SalesOrders { get; set; }
         public DbSet<SalesOrderLine> SalesOrdersLine { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Shipper> Shippers { get; set; }
         public DbSet<Warehouse> Warehouses { get; set; } 
 
     }

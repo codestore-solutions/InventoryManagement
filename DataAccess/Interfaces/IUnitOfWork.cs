@@ -20,8 +20,8 @@ namespace DataAccess.Interfaces
         ISalesOrderRepository SalesOrderRepository { get; }
         ISupplierRepository SupplierRepository { get; }
         IWarehouseRepository WarehouseRepository { get; }
-
+        IShipperRepository ShipperRepository { get; }
         void Save();
-        void SaveAsync();
+        Task SaveAsync();
     }
 }

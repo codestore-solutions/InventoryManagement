@@ -12,7 +12,7 @@ namespace Core.InventoryModels
         [Key]
         public long Id { get; set; }
 
-        public string TanentId { get; set; } = null!;
+        public string TanentId { get; set; } = string.Empty;
     }
 }
 

@@ -39,11 +39,13 @@ namespace DataAccess.Repository
         public async Task<T?> GetAsync(long id)
         {
             var entity = await _dbSet.FindAsync(id);
+            _appDbContext.ChangeTracker.Clear();
             return entity;
         }
 
         public EntityEntry<T> Update(T entity)
         {
+            _appDbContext.ChangeTracker.Clear();
             return _dbSet.Update(entity);
         }
     }
