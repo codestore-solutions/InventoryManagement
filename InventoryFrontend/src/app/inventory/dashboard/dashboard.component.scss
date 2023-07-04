@@ -1,0 +1,25 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .panel-content-wrapper{
+    height: 90vh;
+    padding: 0px 20px 30px 20px;
+    overflow: scroll;
+  }
+  .active{
+    background-color: #4249EC;
+  }
+  .nav-btn{
+    background-color: transparent !important;
+  }
+  .white{
+    color: white !important;
+  }
+  .sidenav{
+    background-color: #545BFC !important;
+    border-top-right-radius: 35px !important;
+    border-bottom-right-radius: 35px !important;
+  }
+  .logo{
+    margin-inline: 1em;
+  }
