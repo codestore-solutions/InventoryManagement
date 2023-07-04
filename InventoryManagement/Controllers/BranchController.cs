@@ -47,7 +47,7 @@ namespace InventoryManagement.Controllers
             return Created("Branch Created Successfully", response);
         }
 
-        [HttpPut("Update/{id}")]
+        [HttpPut("update/{id}")]
         public async Task<ActionResult> Update(long id, Branch branch)
         {
             if (id != branch.Id)

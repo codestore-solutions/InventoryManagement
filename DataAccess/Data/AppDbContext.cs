@@ -16,6 +16,7 @@ namespace DataAccess.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Bill>().HasQueryFilter(x=> x.TanentId == "Tid");
         }
 
         public DbSet<Bill> Bills { get; set; }
