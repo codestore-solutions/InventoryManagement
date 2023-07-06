@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Inventory-Management-web'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B8613611C76141E0A79D3EAD817CDD10 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_20BEE314A4F040CAA5BA66D5D7AA465F }}
           package: .
